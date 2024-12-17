@@ -5,8 +5,13 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="#0097e6">
+    android:background="@drawable/bg">
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/movie" />
 
     <TextView
         android:layout_width="match_parent"
@@ -24,37 +29,41 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:textSize="15sp"
+        android:textColor="#000000"
         android:text="USERNAME"/>
     <EditText
         android:id="@+id/username"
-        android:drawableLeft="@drawable/icon"
-        android:layout_margin="5dp"
-        android:textColorHighlight="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon"
+        android:textColorHighlight="#000000"
+        android:layout_margin="5dp"
+        android:textColor="#000000"
         android:hint="Enter your username" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:textColor="#000000"
         android:textSize="15sp"
         android:text="PASSWORD"/>
     <EditText
         android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:drawableLeft="@drawable/icon_pass"
         android:layout_margin="5dp"
         android:textColorHighlight="#000000"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:hint="Enter your password"
         android:inputType="textPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_margin="25dp"
-        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:id="@+id/login_button"
         android:background="#000000"
         android:textColor="#FBFCFD"
         android:text="Login"/>

@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
 
+                if (user.equals("theatre") && pass.equals("12345")) {
+                    Intent intent = new Intent(getApplicationContext(), DASHBOARD.class);
+                    startActivity(intent);
+                } else {
+                    username.setError("Invalid Username");
+                    password.setError("Invalid Password");
+                }
+
             }
         });
     }
